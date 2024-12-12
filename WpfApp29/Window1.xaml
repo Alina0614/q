@@ -1,0 +1,38 @@
+﻿<Window x:Class="WpfApp29.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp29"
+        mc:Ignorable="d"
+        Title="Hospital" Height="500" Width="850" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid Background="AliceBlue">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Label Grid.Row="0" Grid.Column="1" FontSize="24" HorizontalAlignment="Left" Margin="10,0,0,87" Grid.RowSpan="2">Записаться на прием</Label>
+        <TextBox Grid.Row="1" Grid.Column="1" Width="220" Height="35" Background="White" Name="name"></TextBox>
+        <TextBlock  Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Margin="23,0,243,61" FontSize="20">ФИО</TextBlock>
+        <ComboBox Grid.Row="2" Grid.Column="1" Width="220" Height="35" Background="White" x:Name="vrach">
+            <TextBlock>Хирург</TextBlock>
+            <TextBlock>Терапевт</TextBlock>
+            <TextBlock>Стоматолог</TextBlock>
+            <TextBlock>Гинеколог</TextBlock>
+            <TextBlock>Невропатолог</TextBlock>
+            <TextBlock>Окулист</TextBlock>
+            <TextBlock>Рентгенолог</TextBlock>
+        </ComboBox>
+        <TextBlock  Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" Margin="23,0,243,65" FontSize="20">Врач</TextBlock>
+        <Button  Grid.Row="3" Grid.Column="1" Width="220" Height="35" Grid.ColumnSpan="3" Background="AntiqueWhite" Click="Button_Click">Записаться</Button>
+        <Button  Grid.Row="3" Grid.Column="0" Width="220" Height="35" Grid.ColumnSpan="2" Background="AntiqueWhite" Margin="148,26,165,26" Click="Button_Click_1">Вернуться назад</Button>
+    </Grid>
+</Window>

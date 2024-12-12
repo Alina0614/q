@@ -1,0 +1,28 @@
+﻿<Window x:Class="WpfApp29.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp29"
+        mc:Ignorable="d"
+        Title="Hospital" Height="450" Width="800" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid Background="AliceBlue">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="0"  Grid.Column="0" FontSize="24" HorizontalAlignment="Left" VerticalAlignment="Top"  Margin="249,46,0,0" Grid.ColumnSpan="3"> Городская больница No.2</TextBlock>
+        <Button Grid.Column="1" Grid.Row="1" Height="30" Width="180" Background="AntiqueWhite" Click="Button_Click">Записаться на прием к врачу</Button>
+        <Button Grid.Column="1" Grid.Row="2" Height="30" Width="180" Background="AntiqueWhite" Click="Button_Click_1">Врачи</Button>
+        <Button Grid.Column="1" Grid.Row="3" Height="30" Width="180" Background="AntiqueWhite" Click="Button_Click_2">Пациенты</Button>
+        <Button Grid.Column="1" Grid.Row="4" Height="30" Width="180" Background="AntiqueWhite" Click="Button_Click_3">Отделения больницы</Button>
+    </Grid>
+</Window>
